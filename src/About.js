@@ -203,7 +203,7 @@ import mern from './mern.jpg';
                          2000,   
                         'Developer.',
                         2000,
-                        'Open Source Contributor.',
+                        'FOSS Contributor.',
                         2000
                         ]}
                         speed={25}
