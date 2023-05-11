@@ -51,7 +51,13 @@ import mern from './mern.jpg';
     window.location.href="http://wikipedia.com"
   }
   const handleclick=()=>{
-    window.location.href="http://wikipedia.com"
+    window.location.href="https://github.com/pernelkanic/React_Search_App"
+  }
+  const handlemern=()=>{
+    window.location.href="https://github.com/pernelkanic/MERN-TodoApp"
+  }
+  const handleweb=()=>{
+    window.location.href="https://www.rajalakshmi.org/innovision23/"
   }
   
   const [click, setClick] = useState(false)
@@ -197,7 +203,7 @@ import mern from './mern.jpg';
                          2000,   
                         'Developer.',
                         2000,
-                        'FOSS User.',
+                        'Open Source Contributor.',
                         2000
                         ]}
                         speed={25}
@@ -229,7 +235,7 @@ import mern from './mern.jpg';
                   <p className=''>Contributed in developing a website
                   for event organised by the club
                   of our Department.</p>
-                  <button className="prjlink" onClick={handleClick} target ='_blank'>View Website</button>
+                  <button className="prjlink" onClick={handleweb} target ='_blank'>View Website</button>
                   </div>
                   
               </div>   
@@ -240,7 +246,7 @@ import mern from './mern.jpg';
                     <h1 className=''style={{paddingTop:'2px'}}>Wikipedia API Website:</h1><br/>
                     <p className=''>Developed a Search website in React</p> 
                     <p> using Wikipedia API.</p>
-                    <button className="prjlink" onClick={handleClick} target ='_blank'>View Code</button>
+                    <button className="prjlink" onClick={handleclick} target ='_blank'>View Code</button>
                   </div>
                </div>
 
@@ -250,7 +256,7 @@ import mern from './mern.jpg';
                     <h1 className=''style={{paddingTop:'2px'}}>MERN Todo Application:</h1><br/>
                     <p className=''>Developed a todo application using MERN stack </p> 
                     
-                    <button className="prjlink" onClick={handleClick} target ='_blank'>View Code</button>
+                    <button className="prjlink" onClick={handlemern} target ='_blank'>View Code</button>
                   </div>
                </div>
                
@@ -462,16 +468,12 @@ import mern from './mern.jpg';
            <AiFillGithub />
           </MDBBtn></a>
 
-          <a href='https://github.com/pernelkanic' target="_blank"><MDBBtn outline color="light" floating className='m-1'  role='button'>
-          <AiFillFacebook />
-          </MDBBtn></a>
+          
 
-          <a href='https://github.com/pernelkanic' target="_blank"><MDBBtn outline color="light" floating className='m-1'role='button'>
-              <AiFillInstagram />
-          </MDBBtn></a>
+        
          
 
-          <a href='https://github.com/pernelkanic' target="_blank"> <MDBBtn outline color="light" floating className='m-1'  role='button'>
+          <a href='https://www.linkedin.com/in/venkatkrishnan-raghavan-8b3017249/' target="_blank"> <MDBBtn outline color="light" floating className='m-1'  role='button'>
           <AiFillLinkedin/>
           </MDBBtn></a>
 
