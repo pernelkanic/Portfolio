@@ -1,38 +1,23 @@
-import React, { useState } from 'react';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillFacebook, AiFillGithub, AiFillInstagram,AiFillLinkedin} from 'react-icons/ai'
-import devhed from './programmer-avatar-developer-coder-male-professional-character-occupation-profession-2-512-4189073340.png'
-import { BrowserRouter ,Link } from 'react-router-dom';
-import video from "./wallpaper.mp4"
-import { IconContext } from "react-icons";
-import me from './me.jpeg'
-import elite from './elite.png';
-import wiki from './wiki.jpg'
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
-import{Link as Link2} from "react-scroll";
+import { faCalendar, faEnvelope, faUserLarge } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHomeLg } from '@fortawesome/free-solid-svg-icons';
-import { faUserLarge } from '@fortawesome/free-solid-svg-icons';
-import { faMessage } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
-import { faArr } from '@fortawesome/free-regular-svg-icons';
-import ReactTooltip from "react-tooltip";
 import { Tooltip } from '@mui/material';
-import './About.css';
-import { useCallback } from "react";
+import {
+    MDBBtn,
+    MDBContainer,
+    MDBFooter
+} from 'mdb-react-ui-kit';
+import React, { useCallback, useState } from 'react';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import Particles from "react-particles";
-import { loadFull } from "tsparticles";
+import { Link as Link2 } from "react-scroll";
 import { TypeAnimation } from 'react-type-animation';
+import { loadFull } from "tsparticles";
+import './About.css';
+import elite from './elite.png';
 import top from './icons8-up-arrow-50.png';
+import me from './me.jpeg';
 import mern from './mern.jpg';
+import wiki from './wiki.jpg';
     function Home() {
         const particlesInit = useCallback(async engine => {
             console.log(engine);
@@ -244,8 +229,8 @@ import mern from './mern.jpg';
                   <img src={wiki} className="wikiimg"/>
                   <div className='imgcontent'>
                     <h1 className=''style={{paddingTop:'2px'}}>Wikipedia API Website:</h1><br/>
-                    <p className=''>Developed a Search website in React</p> 
-                    <p> using Wikipedia API.</p>
+                    <p className=''>Developed a Search website in React using Wikipedia API.</p> 
+                 
                     <button className="prjlink" onClick={handleclick} target ='_blank'>View Code</button>
                   </div>
                </div>
@@ -458,6 +443,25 @@ import mern from './mern.jpg';
     </div>
     
     </div> 
+    <div className= 'Contact'>
+            <h1 className='contactme'>Contact Me:</h1>
+    <form className='contactform' >
+
+    <div className='formele' style={ {gap:"5.4em" }}>
+        <label>Name:</label>
+        <input type="text" style={{width:"80%" }} />
+    </div>
+    <div className='formele' style={{ marginTop:"2em"}}>
+        <label >Email address:</label>
+        <input type="email" style={{width:"80%"}} />
+    </div>
+    <div className='formele' style={ {gap:"4.1em" , marginTop:"2em"}}>
+        <label>Message:</label>
+        <textarea className="form-control" rows="5" ></textarea>
+    </div>
+    <button type="submit" >Submit</button>
+</form>
+          </div>
 
 
       <footer id= 'foot'> 
@@ -482,8 +486,8 @@ import mern from './mern.jpg';
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2023 Copyright:
-        venkat     
+      Venkat  © copyright reserved
+             
       </div>
     </MDBFooter>
     
