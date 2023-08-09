@@ -449,22 +449,23 @@ import wiki from './wiki.jpg';
 
     <div className='formele' style={ {gap:"5.4em" }}>
         <label>Name:</label>
-        <input type="text" style={{width:"80%" }} />
+        <input type="text" placeholder='Name' style={{width:"80%",borderRadius:"3px" ,padding:"4px"}} />
     </div>
     <div className='formele' style={{ marginTop:"2em"}}>
         <label >Email address:</label>
-        <input type="email" style={{width:"80%"}} />
+        <input type="email" placeholder='Email' style={{width:"80%" , borderRadius:"3px" , padding:"4px"}} />
     </div>
-    <div className='formele' style={ {gap:"4.1em" , marginTop:"2em"}}>
+    <div className='formele' style={ {gap:"4.1em" , marginTop:"2em",borderRadius:"3px"}}>
         <label>Message:</label>
-        <textarea className="form-control" rows="5" ></textarea>
+        <textarea placeholder='Leave a message for me' className="form-control" rows="5" ></textarea>
     </div>
-    <button type="submit" >Submit</button>
+    
 </form>
+<button type="submit" className='contactsub' >Submit</button>
           </div>
 
 
-      <footer id= 'foot'> 
+      <footer id= 'foot' style={{marginTop:"6em"}}> 
         <MDBFooter className='bg-[#000] bg-opacity-70 text-center pt-10 mt-10  text-white '>
       <MDBContainer className='  pb-0'>
         <section className='mb-4 gap-8'>

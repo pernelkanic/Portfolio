@@ -463,6 +463,10 @@ a:visited, a:hover, a:active {
 
 
 }
+.Contact{
+    display: flex;
+    flex-direction: column;
+}
 
 .about1{
     cursor: pointer;
@@ -482,12 +486,19 @@ a:visited, a:hover, a:active {
 .formele{
     gap: 2em;
     display: flex;
+    margin-bottom: 2em;
 }
 
 .contactform{
     
-    color: #ff0049;
+    color: white;
     width: 50%;
-    margin-left : 30%
-
+    margin-left : 25%;
+    
+}
+.contactsub{
+    text-align: center;
+    color: white;
+    
+    justify-content: center;
 }
